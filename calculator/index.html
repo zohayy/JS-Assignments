@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            width: 30px;
+        }
+        .container{
+            background-color: rgb(14, 4, 4);
+            text-align: center;
+            padding: 0px;
+            margin: 100px 600px;
+            border-radius: 8px;
+            border: 2px solid blue;
+            height: 580px;
+            width: 400px;
+         
+        }
+        .button{
+            margin: 3px;
+            height: 60px;
+           width: 80px;
+           border: 2px solid rgb(45, 45, 99);
+           padding: 0;
+           border-radius: 8px;
+           color: mediumseagreen;
+           background-color: darkslategrey;
+        }
+        .box{
+            margin: 3px;
+            height: 60px;
+           width: 250px;
+           border: 2px solid rgb(45, 45, 99);
+           padding: 0;
+           border-radius: 8px;
+           color:mediumseagreen ;
+           font-size: 20px;
+        }
+        .on{
+            margin: 3px;
+            height: 60px;
+           width: 80px;
+           border: 2px solid rgb(45, 45, 99);
+           padding: 0 ;
+           border-radius: 8px;
+           color: mediumseagreen;
+        
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="rows">
+            <input type="number"  id="textbox" class="box" value="">
+            <button onclick="clearValue()" class="button on" >C</button>
+        </div>   
+       
+           <div class="rows">
+               <input type="button" value="1" class="button"onclick="setValueToTextBox(1)">
+               <input type="button" value="2" class="button" onclick="setValueToTextBox(2)">        
+               <input type="button" value="3" class="button" onclick="setValueToTextBox(3)">        
+   
+               <button onclick=" getFirstNumber('+')" class="button">+</button>
+   
+           </div><br>
+           <div class="rows">
+               <input type="button" value="4" class="button"onclick="setValueToTextBox(4)">
+               <input type="button" value="5" class="button" onclick="setValueToTextBox(5)">        
+               <input type="button" value="6" class="button" onclick="setValueToTextBox(6)">        
+   
+               <button onclick="getFirstNumber('-')" class="button">-</button>
+           </div><br>
+           <div class="rows">
+               <input type="button" value="7" class="button"onclick="setValueToTextBox(7)">
+               <input type="button" value="8" class="button" onclick="setValueToTextBox(8)">        
+               <input type="button" value="9" class="button" onclick="setValueToTextBox(9)">        
+   
+               <button onclick="getFirstNumber('*')" class="button">*</button>
+           </div><br>
+           <div class="rows">
+               <input type="button" value="." class="button" onclick="setValueToTextBox('.')">        
+               <input type="button" value="0" class="button" onclick="setValueToTextBox(0)">        
+               <button onclick=" getFinalResult()" class="button">=</button>
+               <button onclick=" getFirstNumber('/')" class="button">/</button>
+           </div><br>
+           <div class="rows">
+               <input type="button" value="Sin" class="button"onclick="setValueToTextBox(Sin)">
+               <input type="button" value="Cos" class="button" onclick="setValueToTextBox(Cos)">        
+               <input type="button" value="Tan" class="button" onclick="setValueToTextBox(Tan)">        
+               <input type="button" value="EXP" class="button" onclick="setValueToTextBox(EXP)">        
+   
+           </div><br>
+
+           <div class="rows">
+            <input type="button" value="ln" class="button"onclick="setValueToTextBox(ln)">
+            <input type="button" value="log" class="button" onclick="setValueToTextBox(Log)">        
+            <input type="button" value="e" class="button" onclick="setValueToTextBox(e)">        
+            <input type="button" value="&Sqrt;" class="button" onclick="setValueToTextBox(sqrt)">        
+
+        </div>
+       
+           
+        
+       </div>
+   
+<script src="./calculator.js"></script>
+
+</body>
+
+</html>
